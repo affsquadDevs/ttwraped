@@ -1,78 +1,78 @@
 # TikTok Wrapped 📊
 
-Простий веб-додаток для аналізу ваших даних TikTok. Завантажте експортований JSON файл і отримайте красиву статистику!
+A simple web application for analyzing your TikTok data. Upload your exported JSON file and get beautiful statistics!
 
-## 🚀 Запуск
+## 🚀 Getting Started
 
 ```bash
 npm install
 npm run dev
 ```
 
-Відкрийте [http://localhost:3000](http://localhost:3000)
+Open [http://localhost:3000](http://localhost:3000)
 
-## 📥 Як отримати дані з TikTok
+## 📥 How to Get Your TikTok Data
 
-1. Відкрийте TikTok додаток
-2. Перейдіть в **Профіль** → **Налаштування** (три лінії)
-3. **Налаштування та конфіденційність**
-4. **Акаунт** → **Завантажити ваші дані**
-5. Виберіть **JSON** формат
-6. Натисніть **Запросити дані**
-7. Зачекайте email з посиланням для завантаження (зазвичай 1-3 дні)
-8. Завантажте та розпакуйте архів
-9. Знайдіть файл `user_data.json`
+1. Open the TikTok app
+2. Go to **Profile** → **Settings** (three lines)
+3. **Settings and Privacy**
+4. **Account** → **Download your data**
+5. Select **JSON** format
+6. Click **Request data**
+7. Wait for an email with a download link (usually 1-3 days)
+8. Download and extract the archive
+9. Find the `user_data.json` file
 
-## 📈 Що аналізується
+## 📈 What's Analyzed
 
-### Профіль
-- Username та нікнейм
+### Profile
+- Username and nickname
 - Email
-- Дата створення акаунту
-- Біографія
+- Account creation date
+- Biography
 
-### Перегляди відео
-- Загальна кількість переглянутих відео
-- Найактивніший час перегляду
-- Дата першого та останнього відео
+### Video Views
+- Total number of videos watched
+- Most active viewing time
+- First and last video dates
 
-### Активність
-- Лайкнуті відео
-- Улюблені відео
-- Коментарі
-- Поділилися контентом
+### Activity
+- Liked videos
+- Favorite videos
+- Comments
+- Shared content
 
-### Соціальне
-- Кількість підписників
-- Кількість підписок
-- Чати та повідомлення
+### Social
+- Number of followers
+- Number of following
+- Chats and messages
 
-### Контент
-- Опубліковані відео
-- Отримані лайки
+### Content
+- Published videos
+- Received likes
 
-### Пошук
-- Топ пошукових запитів
-- Загальна кількість пошуків
+### Search
+- Top search queries
+- Total number of searches
 
-### Пристрої
-- Які пристрої використовуються
-- Кількість входів
+### Devices
+- Which devices are used
+- Number of logins
 
-## 🔒 Приватність
+## 🔒 Privacy
 
-Всі дані обробляються **локально** у вашому браузері. Файл НЕ завантажується на зовнішні сервери.
+All data is processed **locally** in your browser. The file is NOT uploaded to external servers.
 
-## 🛠 Технології
+## 🛠 Technologies
 
 - Next.js 14
 - React 18
 - TypeScript
-- CSS (без бібліотек)
+- CSS (no libraries)
 
-## 📝 Структура даних TikTok
+## 📝 TikTok Data Structure
 
-TikTok експортує дані в такому форматі:
+TikTok exports data in the following format:
 
 ```json
 {

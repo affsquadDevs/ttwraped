@@ -916,6 +916,43 @@ export default function Home() {
         </p>
       </div>
 
+      {/* Learn More Section */}
+      {!userData && (
+        <div className="card">
+          <h2 className="section-title">Learn More About TikTok Data</h2>
+          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1rem', lineHeight: '1.6', marginBottom: '1.5rem' }}>
+            We publish in-depth guides about TikTok data exports, privacy, and usage analysis.
+            Explore how your data works, what it contains, and how to analyze it responsibly.
+          </p>
+          <ul className="learn-more-list">
+            <li>
+              <a href="/blog/tiktok-wrapped-explained-what-it-is-how-it-works" className="learn-more-link">
+                <span>•</span>
+                <span>TikTok Wrapped Explained: What It Is & How It Works</span>
+              </a>
+            </li>
+            <li>
+              <a href="/blog/how-to-download-analyze-tiktok-data" className="learn-more-link">
+                <span>•</span>
+                <span>How to Download and Analyze TikTok Data</span>
+              </a>
+            </li>
+            <li>
+              <a href="/blog/what-your-tiktok-usage-says-about-your-digital-habits" className="learn-more-link">
+                <span>•</span>
+                <span>What Your TikTok Usage Says About Your Digital Habits</span>
+              </a>
+            </li>
+            <li>
+              <a href="/blog/how-to-analyze-tiktok-data-safely-privacy-first-guide" className="learn-more-link">
+                <span>•</span>
+                <span>How to Analyze TikTok Data Safely</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
+
       {/* Instructions Section */}
       {!userData && (
         <div className="card instruction-card" id="how-to-get-data">

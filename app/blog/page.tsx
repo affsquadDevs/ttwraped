@@ -60,7 +60,7 @@ export default function BlogPage() {
       <div className="card">
         <h1 className="section-title">Blog</h1>
         <p className="blog-intro">
-          Guides and articles about TikTok data analysis, privacy, and understanding your social media activity.
+          This blog exists to help users better understand TikTok data, privacy, and personal usage patterns through clear, independent, and educational content. TikTok allows users to download their activity data, but it often comes in raw, technical formats that can be difficult to interpret. Our articles explain what this data contains, how it&apos;s structured, and how to analyze it responsibly using your own data exports. We cover topics including TikTok data downloads, data file structures, privacy considerations, usage behavior analysis, and the differences between platform analytics and independent data tools. Our goal is to provide factual, easy-to-understand guidance without assumptions or promotional intent. This blog is for everyday TikTok users, creators, and anyone interested in understanding their digital activity through transparent and privacy-focused data analysis.
         </p>
       </div>
 

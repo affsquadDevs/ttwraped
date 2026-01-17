@@ -18,7 +18,6 @@ export default function Header() {
   }, [])
 
   useEffect(() => {
-    // Обробка якірних посилань при завантаженні сторінки
     if (pathname === '/' && window.location.hash) {
       const hash = window.location.hash
       setTimeout(() => {
@@ -59,13 +58,11 @@ export default function Header() {
       const hash = href.substring(1)
       
       if (pathname === '/') {
-        // Якщо вже на головній сторінці, просто прокручуємо
         const element = document.querySelector(hash)
         if (element) {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }
       } else {
-        // Якщо на іншій сторінці, переходимо на головну з якірним посиланням
         window.location.href = href
       }
     }

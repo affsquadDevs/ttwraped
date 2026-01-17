@@ -65,7 +65,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Organization Structured Data for SEO */}
       <Script
         id="organization-structured-data"
         type="application/ld+json"

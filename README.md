@@ -1,8 +1,8 @@
-# TikTok Wrapped 📊
+# TikTok Wrapped
 
 A simple web application for analyzing your TikTok data. Upload your exported JSON file and get beautiful statistics!
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 npm install
@@ -11,7 +11,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
-## 📥 How to Get Your TikTok Data
+## How to Get Your TikTok Data
 
 1. Open the TikTok app
 2. Go to **Profile** → **Settings** (three lines)
@@ -23,7 +23,7 @@ Open [http://localhost:3000](http://localhost:3000)
 8. Download and extract the archive
 9. Find the `user_data.json` file
 
-## 📈 What's Analyzed
+## What's Analyzed
 
 ### Profile
 - Username and nickname
@@ -59,18 +59,18 @@ Open [http://localhost:3000](http://localhost:3000)
 - Which devices are used
 - Number of logins
 
-## 🔒 Privacy
+## Privacy
 
 All data is processed **locally** in your browser. The file is NOT uploaded to external servers.
 
-## 🛠 Technologies
+## Technologies
 
 - Next.js 14
 - React 18
 - TypeScript
 - CSS (no libraries)
 
-## 📝 TikTok Data Structure
+## TikTok Data Structure
 
 TikTok exports data in the following format:
 

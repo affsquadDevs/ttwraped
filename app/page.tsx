@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from 'react'
 import JSZip from 'jszip'
 
-// Extend Window interface for dataLayer
 declare global {
   interface Window {
     dataLayer?: any[]
@@ -835,12 +834,9 @@ export default function Home() {
       setUserData(result)
       setProgress('')
       
-      // Dispatch wrapped_requested event to dataLayer
       if (typeof window !== 'undefined') {
-        // Ensure dataLayer exists
         window.dataLayer = window.dataLayer || []
         
-        // Push the custom event
         window.dataLayer.push({
           event: 'wrapped_requested',
           timestamp: new Date().toISOString(),
@@ -848,8 +844,7 @@ export default function Home() {
           fileName: file.name
         })
         
-        // Log for verification
-        console.log('✅ wrapped_requested event sent to dataLayer:', {
+        console.log('wrapped_requested event sent to dataLayer:', {
           event: 'wrapped_requested',
           timestamp: new Date().toISOString(),
           fileType: isZip ? 'zip' : 'json',
@@ -889,7 +884,6 @@ export default function Home() {
 
   return (
     <div className="container">
-      {/* Hero Section */}
       <div className="hero-section">
         <h1 className="logo-text">
           <span className="cyan">Tik</span><span className="pink">Tok</span> 
@@ -916,7 +910,6 @@ export default function Home() {
         </p>
       </div>
 
-      {/* Learn More Section */}
       {!userData && (
         <div className="card">
           <h2 className="section-title">Learn More About TikTok Data</h2>
@@ -953,7 +946,6 @@ export default function Home() {
         </div>
       )}
 
-      {/* Instructions Section */}
       {!userData && (
         <div className="card instruction-card" id="how-to-get-data">
           <h2 className="section-title">📱 How to Get Your TikTok Data</h2>
@@ -1081,7 +1073,6 @@ export default function Home() {
           </div>
         )}
         
-        {/* How to get data link */}
         {!userData && !loading && (
           <a href="#how-to-get-data" className="how-to-link">
             Don&apos;t have your data? Learn how to download it ↓
@@ -1089,7 +1080,6 @@ export default function Home() {
         )}
       </div>
 
-      {/* Demo Video Section */}
       {!userData && (
         <div className="card demo-card">
           <h2 className="section-title">🎬 See It In Action</h2>
@@ -1129,7 +1119,6 @@ export default function Home() {
 
       {userData && (
         <>
-          {/* Профіль */}
           {(userData.username || userData.displayName) && (
             <div className="card profile-card">
               <div className="profile-header">
@@ -1177,7 +1166,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* Main Stats - Casino Style */}
           <div className="card highlight-card stats-casino">
             <h2 className="section-title">🎰 Your Stats</h2>
             <div className="stats-grid">
@@ -1208,14 +1196,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Rank Card */}
           {userData.estimatedWatchHours !== undefined && (
             <div className="card rank-card">
               <SlotMachine hours={userData.estimatedWatchHours} />
             </div>
           )}
 
-          {/* Activity */}
           <div className="card">
             <h2 className="section-title">⏰ When You're Most Active</h2>
             <div className="user-info">
@@ -1246,7 +1232,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Engagement */}
           <div className="card">
             <h2 className="section-title">❤️ Engagement</h2>
             <div className="user-info">
@@ -1285,7 +1270,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Activity by Year */}
           {userData.activityByYear && Object.keys(userData.activityByYear).length > 0 && (
             <div className="card">
               <h2 className="section-title">📅 Activity by Year</h2>
@@ -1312,7 +1296,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* Collections */}
           {userData.collections && userData.collections.length > 0 && (
             <div className="card">
               <h2 className="section-title">📂 Your Collections ({userData.collectionsCount})</h2>
@@ -1324,7 +1307,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* Favorites */}
           {(userData.favoriteSoundsCount || userData.favoriteEffectsCount || userData.favoriteHashtagsCount) && (
             <div className="card">
               <h2 className="section-title">⭐ Favorites</h2>
@@ -1351,7 +1333,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* Search */}
           {userData.topSearchTerms && userData.topSearchTerms.length > 0 && (
             <div className="card">
               <h2 className="section-title">🔍 Top Searches</h2>
@@ -1372,7 +1353,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* Sharing */}
           {userData.shareMethods && userData.shareMethods.length > 0 && (
             <div className="card">
               <h2 className="section-title">📤 Share Destinations</h2>
@@ -1387,7 +1367,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* Comments */}
           {userData.recentComments && userData.recentComments.length > 0 && (
             <div className="card">
               <h2 className="section-title">💭 Your Comments</h2>
@@ -1408,7 +1387,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* Messages */}
           {(userData.totalChats !== undefined || userData.totalDirectMessages !== undefined) && (
             <div className="card">
               <h2 className="section-title">💬 Messages</h2>
@@ -1456,7 +1434,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* Followers */}
           {userData.recentFollowers && userData.recentFollowers.length > 0 && (
             <div className="card">
               <h2 className="section-title">👥 Recent Followers</h2>
@@ -1468,7 +1445,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* Devices */}
           {userData.deviceUsage && userData.deviceUsage.length > 0 && (
             <div className="card">
               <h2 className="section-title">📱 Devices & Networks</h2>
@@ -1502,7 +1478,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* Live Streams */}
           {userData.watchedLiveStreams !== undefined && userData.watchedLiveStreams > 0 && (
             <div className="card">
               <h2 className="section-title">🔴 TikTok Live</h2>
@@ -1521,7 +1496,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* Blocked Users */}
           {userData.blockedUsersCount !== undefined && userData.blockedUsersCount > 0 && (
             <div className="card">
               <h2 className="section-title">🚫 Blocked ({userData.blockedUsersCount})</h2>

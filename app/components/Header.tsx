@@ -18,16 +18,21 @@ export default function Header() {
   }, [])
 
   useEffect(() => {
-    if (pathname === '/' && window.location.hash) {
+    if (
+      (pathname === '/' || pathname === '/analyze-wrapped') &&
+      typeof window !== 'undefined' &&
+      window.location.hash
+    ) {
       const hash = window.location.hash
       setTimeout(() => {
         const element = document.querySelector(hash)
         if (element) {
           const headerHeight = 80
-          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
+          const elementPosition =
+            element.getBoundingClientRect().top + window.pageYOffset
           window.scrollTo({
             top: elementPosition - headerHeight,
-            behavior: 'smooth'
+            behavior: 'smooth',
           })
         }
       }, 100)
@@ -44,7 +49,7 @@ export default function Header() {
 
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/#upload-section', label: 'Analyze' },
+    { href: '/analyze-wrapped#upload-section', label: 'Analyze' },
     { href: '/about', label: 'About' },
     { href: '/blog', label: 'Blog' },
     { href: '/contact', label: 'Contact' },
@@ -72,7 +77,11 @@ export default function Header() {
     if (href === '/') {
       return pathname === '/'
     }
-    return pathname?.startsWith(href)
+    const pathOnly = href.split('#')[0]
+    if (pathOnly && pathOnly.length > 1) {
+      return pathname === pathOnly || pathname?.startsWith(`${pathOnly}/`)
+    }
+    return pathname === href || pathname?.startsWith(href)
   }
 
   return (

@@ -1,9 +1,11 @@
 import './globals.css'
 import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
+import { headers } from 'next/headers'
 import React from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import { blogHeadJsonLdTriples } from '@/lib/structured-data/blog-head-json-ld'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ttwrapper.com'),
@@ -90,6 +92,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const pathname = (headers().get('x-pathname') ?? '').replace(/\/$/, '')
+  const blogHeadJsonLd = blogHeadJsonLdTriples(pathname)
+
   return (
     <html lang="en">
       <head>
@@ -123,6 +128,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <meta name="apple-mobile-web-app-title" content="TikTok Wrapped" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
+
+        {blogHeadJsonLd
+          ? blogHeadJsonLd.map((schema, index) => (
+              <script
+                key={index}
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify(schema),
+                }}
+              />
+            ))
+          : null}
       </head>
 
       <body>

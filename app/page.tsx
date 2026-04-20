@@ -1,18 +1,24 @@
 'use client'
 
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <div className="container">
       <div className="hero-section">
         <h1 className="logo-text">
-          <span className="cyan">Tik</span><span className="pink">Tok</span> 
+          <span className="cyan">Tik</span>
+          <span className="pink">Tok</span>
           <span className="white">Wrapped</span>
         </h1>
-        
+
         <p className="hero-tagline">Your Year on TikTok, Revealed 🎬</p>
-        <div style={{ textAlign: 'center', marginTop: '2rem', marginBottom: '2rem', color: 'rgba(255,255,255,0.8)', fontSize: '1.1rem' }}>
-        An independent platform for understanding personal TikTok activity data.
-      </div>
+
+        <p className="hero-platform-tagline">
+          An independent platform for understanding personal TikTok activity
+          data.
+        </p>
+
         <div className="hero-features">
           <div className="feature">
             <span className="feature-icon">🎰</span>
@@ -30,8 +36,6 @@ export default function Home() {
           The service works only with data you choose to upload and is intended for informational and personal analysis purposes.
         </p>
       </div>
-
-     
 
       <div className="card">
         <h2 className="section-title">Learn More About TikTok Data</h2>
@@ -68,46 +72,74 @@ export default function Home() {
 
       <div className="card">
         <h2 className="section-title">What TikTok Data Can Reveal</h2>
-        <ul className="learn-more-list" style={{ listStyle: 'none', padding: 0 }}>
-          <li style={{ marginBottom: '1rem', display: 'flex', alignItems: 'flex-start' }}>
-            <span style={{ marginRight: '0.75rem', fontSize: '1.5rem' }}>📊</span>
+        <ul className="home-reveal-list">
+          <li className="home-reveal-item">
+            <span className="home-reveal-icon" aria-hidden="true">
+              📊
+            </span>
             <span>Usage frequency and activity trends over time</span>
           </li>
-          <li style={{ marginBottom: '1rem', display: 'flex', alignItems: 'flex-start' }}>
-            <span style={{ marginRight: '0.75rem', fontSize: '1.5rem' }}>⏰</span>
+          <li className="home-reveal-item">
+            <span className="home-reveal-icon" aria-hidden="true">
+              ⏰
+            </span>
             <span>Time-of-day engagement patterns</span>
           </li>
-          <li style={{ marginBottom: '1rem', display: 'flex', alignItems: 'flex-start' }}>
-            <span style={{ marginRight: '0.75rem', fontSize: '1.5rem' }}>💬</span>
+          <li className="home-reveal-item">
+            <span className="home-reveal-icon" aria-hidden="true">
+              💬
+            </span>
             <span>General interaction behavior (likes, comments, shares)</span>
           </li>
-          <li style={{ marginBottom: '1rem', display: 'flex', alignItems: 'flex-start' }}>
-            <span style={{ marginRight: '0.75rem', fontSize: '1.5rem' }}>📈</span>
+          <li className="home-reveal-item">
+            <span className="home-reveal-icon" aria-hidden="true">
+              📈
+            </span>
             <span>Long-term changes in app usage habits</span>
           </li>
         </ul>
-        <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', marginTop: '1.5rem', fontStyle: 'italic' }}>
-          All insights are based on user-owned data exports and are intended for informational and personal understanding only.
+        <p className="home-insights-disclaimer">
+          All insights are based on user-owned data exports and are intended for
+          informational and personal understanding only.
         </p>
       </div>
 
       <div className="card">
         <h2 className="section-title">How TikTok Wrapped Works</h2>
-        <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1rem', lineHeight: '1.6' }}>
-          TikTok Wrapped works by analyzing official TikTok data exports that users choose to download themselves. The platform focuses on summarizing and organizing this information into readable insights without accessing user accounts or collecting additional data. Detailed instructions and analysis tools are available on a separate page for users who wish to explore their data further.
+        <p
+          style={{
+            color: 'rgba(255,255,255,0.7)',
+            fontSize: '1rem',
+            lineHeight: '1.6',
+          }}
+        >
+          TikTok Wrapped works by analyzing official TikTok data exports that
+          users choose to download themselves. The platform focuses on
+          summarizing and organizing this information into readable insights
+          without accessing user accounts or collecting additional data.
+          Detailed instructions and analysis tools are available on a{' '}
+          <Link href="/analyze-wrapped" className="home-inline-cta">
+            separate page
+          </Link>{' '}
+          for users who wish to explore their data further.
         </p>
         <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
-          <a href="/analyze-wrapped" style={{ 
-            display: 'inline-block',
-            padding: '0.75rem 2rem',
-            backgroundColor: '#25f4ee',
-            color: '#000',
-            textDecoration: 'none',
-            borderRadius: '8px',
-            fontWeight: 'bold',
-            fontSize: '1rem',
-            transition: 'background-color 0.3s'
-          }}>Analyze Your TikTok Data →</a>
+          <Link
+            href="/analyze-wrapped"
+            style={{
+              display: 'inline-block',
+              padding: '0.75rem 2rem',
+              backgroundColor: '#25f4ee',
+              color: '#000',
+              textDecoration: 'none',
+              borderRadius: '8px',
+              fontWeight: 'bold',
+              fontSize: '1rem',
+              transition: 'background-color 0.3s',
+            }}
+          >
+            Analyze Your TikTok Data →
+          </Link>
         </div>
       </div>
 
@@ -143,7 +175,10 @@ export default function Home() {
         </div>
         
         <p className="demo-cta">
-          Ready to discover your stats? <a href="/analyze-wrapped" className="demo-link">Analyze your data now! →</a>
+          Ready to discover your stats?{' '}
+          <Link href="/analyze-wrapped" className="demo-link">
+            Analyze your data now! →
+          </Link>
         </p>
       </div>
     </div>

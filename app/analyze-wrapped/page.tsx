@@ -1054,7 +1054,8 @@ export default function AnalyzeWrapped() {
               <span className="stat-tag">📅 Activity by Year</span>
               <span className="stat-tag">⏰ Peak Hours</span>
               <span className="stat-tag">❤️ Likes & Comments</span>
-              <span className="stat-tag">📤 Share History</span>              <span className="stat-tag">🔴 Live Streams</span>
+              <span className="stat-tag">📤 Share History</span>
+              <span className="stat-tag">🔴 Live Streams</span>
             </div>
           </div>
           

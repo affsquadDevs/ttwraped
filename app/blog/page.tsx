@@ -24,6 +24,21 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   const posts = [
     {
+      slug: 'what-data-does-tiktok-collect',
+      title: 'What Data Does TikTok Collect About You? Explained Clearly',
+      description:
+        'Learn what data TikTok collects about users, including activity, account, and device information, and what appears in your TikTok data export.',
+      date: '2026-01-15',
+    },
+    {
+      slug: 'is-it-safe-to-upload-tiktok-data-online',
+      title:
+        'Is It Safe to Upload TikTok Data Online? What Users Should Know',
+      description:
+        'Whether uploading TikTok data online is safe, what risks to consider, and how to evaluate analysis tools responsibly.',
+      date: '2026-01-14',
+    },
+    {
       slug: 'what-your-tiktok-usage-says-about-your-digital-habits',
       title: 'What Your TikTok Usage Says About Your Digital Habits',
       description: 'Learn how TikTok usage data reveals digital habits, activity patterns, and long-term behavior trends using your own data export.',

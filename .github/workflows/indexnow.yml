@@ -1,0 +1,28 @@
+name: IndexNow
+
+# Notify IndexNow (Bing, Yandex, Seznam, …) of the site's URLs after every
+# production deploy. Triggered on pushes to main (which Vercel auto-deploys),
+# plus a manual trigger. The IndexNow key is public (hosted at /<key>.txt), so
+# no repository secrets are required.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Wait for the Vercel production deploy to go live
+        run: sleep 120
+      - name: Submit sitemap URLs to IndexNow
+        run: node scripts/indexnow.mjs

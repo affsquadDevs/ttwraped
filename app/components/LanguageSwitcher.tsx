@@ -21,20 +21,29 @@ export default function LanguageSwitcher({ locale }: { locale: Locale }) {
     const onClick = (e: MouseEvent) => {
       if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false)
     }
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false)
+    }
     document.addEventListener('click', onClick)
-    return () => document.removeEventListener('click', onClick)
+    document.addEventListener('keydown', onKey)
+    return () => {
+      document.removeEventListener('click', onClick)
+      document.removeEventListener('keydown', onKey)
+    }
   }, [])
 
   return (
     <div className="lang-switcher" ref={ref}>
       <button
         type="button"
-        className="lang-switcher-toggle"
+        className={`lang-switcher-toggle ${open ? 'open' : ''}`}
         aria-haspopup="listbox"
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
       >
-        🌐 {localeNames[locale]} ▾
+        <span className="lang-switcher-globe" aria-hidden="true">🌐</span>
+        <span className="lang-switcher-label">{localeNames[locale]}</span>
+        <span className="lang-switcher-caret" aria-hidden="true" />
       </button>
       {open && (
         <ul className="lang-switcher-menu" role="listbox">
@@ -43,10 +52,15 @@ export default function LanguageSwitcher({ locale }: { locale: Locale }) {
               <Link
                 href={localizedPath(base, l)}
                 hrefLang={l}
+                role="option"
+                aria-selected={l === locale}
                 className={`lang-switcher-item ${l === locale ? 'active' : ''}`}
                 onClick={() => setOpen(false)}
               >
-                {localeNames[l]}
+                <span>{localeNames[l]}</span>
+                {l === locale && (
+                  <span className="lang-switcher-check" aria-hidden="true">✓</span>
+                )}
               </Link>
             </li>
           ))}

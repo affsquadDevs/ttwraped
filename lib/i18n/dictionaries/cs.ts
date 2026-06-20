@@ -239,7 +239,7 @@ export const dictionary: Dictionary = {
       'Web umožňuje uživatelům nahrát vlastní export dat z TikToku a získat automatizované přehledy založené výhradně na tomto souboru. Služba se zaměřuje na shrnutí, vizualizaci a obecnou analýzu vzorců používání, aby uživatelům pomohla lépe porozumět jejich digitálnímu chování.',
       'TikTok Wrapped nevytváří účty, nevyžaduje registraci a neposkytuje funkce sociálních sítí ani hostování obsahu. Web existuje výhradně jako informační nástroj, který zpracovává soubory poskytnuté uživatelem na jeho žádost.',
       'Naším cílem je nabídnout jednoduchou, transparentní a na soukromí zaměřenou službu. Web je zdarma a je financován reklamou; informace o tom, jak fungují soubory cookie a reklamy, najdete v našich [[privacy:Zásadách ochrany osobních údajů]].',
-      'TikTok Wrapped provozuje AffSquad a lze jej kontaktovat na adrese [[email:hello@affsquad.com]]. Jde o nezávislý, neoficiální nástroj, který není spojen s TikTokem ani ByteDance Ltd., není jimi schválen ani s nimi nijak propojen.',
+      'TikTok Wrapped provozuje AffSquad a lze jej kontaktovat na adrese [[email:hello@ttwrapper.com]]. Jde o nezávislý, neoficiální nástroj, který není spojen s TikTokem ani ByteDance Ltd., není jimi schválen ani s nimi nijak propojen.',
     ],
     faqTitle: 'Časté dotazy',
     faq: [
@@ -289,7 +289,7 @@ export const dictionary: Dictionary = {
       ],
     },
     sections: [
-      { title: '1. Kdo jsme (správce údajů)', paragraphs: ['TikTok Wrapped provozuje AffSquad, správce údajů odpovědný za tento web. Pokud máte jakékoli dotazy ohledně těchto zásad nebo toho, jak nakládáme s vašimi daty, můžete nás kontaktovat na adrese [[email:hello@affsquad.com]] nebo prostřednictvím naší stránky [[contact:Kontakt]].'] },
+      { title: '1. Kdo jsme (správce údajů)', paragraphs: ['TikTok Wrapped provozuje AffSquad, správce údajů odpovědný za tento web. Pokud máte jakékoli dotazy ohledně těchto zásad nebo toho, jak nakládáme s vašimi daty, můžete nás kontaktovat na adrese [[email:hello@ttwrapper.com]] nebo prostřednictvím naší stránky [[contact:Kontakt]].'] },
       { title: '2. Vaše nahraná data z TikToku', paragraphs: ['Když používáte analyzátor, váš export dat z TikToku (ZIP nebo JSON) je čten a zpracováván výhradně ve vašem vlastním prohlížeči. Soubor není nahráván na naše servery ani na nich ukládán a nevytváříme z něj žádné profily ani databáze. Analýza existuje pouze na kartě vašeho prohlížeče a po zavření nebo obnovení stránky zmizí.', 'K používání analyzátoru nevyžadujeme vytvoření účtu, přihlášení ani osobní identifikaci.'] },
       { title: '3. Automaticky shromažďované informace', paragraphs: ['Jako většina webů mohou být při návštěvě ttwrapper.com prostřednictvím souborů cookie a podobných technologií shromažďovány určité technické informace, a to námi i poskytovateli třetích stran (například společností Google), včetně:'], list: ['typ zařízení a prohlížeče, velikost obrazovky a operační systém;', 'IP adresa (používaná k přibližnému určení obecné polohy a pro účely zabezpečení);', 'navštívené stránky, odkazující adresy URL a události interakcí;', 'identifikátory cookie používané pro analytiku a reklamu.'], afterList: ['Tyto informace jsou zpracovávány pouze tam, kde jste udělili souhlas, nebo tam, kde máme oprávněný zájem, jak je popsáno níže.'] },
       { title: '4. Soubory cookie a podobné technologie', paragraphs: ['Soubory cookie a podobné technologie používáme pro nezbytnou funkčnost, analytiku a reklamu. Nepodstatné soubory cookie (analytické a reklamní) se nastavují až poté, co udělíte souhlas prostřednictvím našeho cookie banneru. Hlavní kategorie jsou:'], hasCookieTable: true, afterList: ['Svůj souhlas můžete kdykoli změnit nebo odvolat pomocí odkazu „Nastavení cookies“ v patičce webu.'] },
@@ -299,12 +299,12 @@ export const dictionary: Dictionary = {
       { title: '8. Jak používáme informace', paragraphs: [], list: ['k provozu, údržbě a zabezpečení webu;', 'k vytváření přehledů z dat, která se rozhodnete analyzovat (ve vašem prohlížeči);', 'k pochopení souhrnného používání a zlepšování služby;', 'k zobrazování reklamy, která pomáhá financovat bezplatnou službu.'], afterList: ['Vaše osobní údaje neprodáváme a váš nahraný export z TikToku nepoužíváme k reklamě ani profilování.'] },
       { title: '9. Sdílení dat', paragraphs: ['Vaše nahraná data z TikToku s nikým nesdílíme. Technické a cookie údaje popsané výše mohou být zpracovávány našimi poskytovateli služeb, včetně společnosti Google (reklama a analytika) a našeho poskytovatele hostingu (Vercel), z nichž každý jedná podle vlastních zásad ochrany osobních údajů.'] },
       { title: '10. Uchovávání dat', paragraphs: ['Váš nahraný export z TikToku u nás nikdy neukládáme, takže na naší straně není co uchovávat ani mazat. Souhrnná analytická a reklamní data uchovávaná našimi poskytovateli jsou uchovávána podle jejich vlastních lhůt pro uchovávání (například podle standardního nastavení uchovávání společnosti Google).'] },
-      { title: '11. Vaše práva na ochranu soukromí (GDPR/UK GDPR)', paragraphs: ['Pokud se nacházíte v EHP nebo ve Spojeném království, máte právo na přístup ke svým osobním údajům, jejich opravu, výmaz, omezení zpracování nebo vznesení námitky proti jejich zpracování, jakož i právo na přenositelnost údajů a právo kdykoli odvolat souhlas. Chcete-li tato práva uplatnit, kontaktujte nás na adrese [[email:hello@affsquad.com]]. Máte také právo podat stížnost u svého místního dozorového úřadu pro ochranu osobních údajů.'] },
-      { title: '12. Práva na ochranu soukromí v Kalifornii (CCPA/CPRA)', paragraphs: ['Obyvatelé Kalifornie mají právo vědět, jaké osobní údaje jsou shromažďovány, požádat o jejich výmaz a odhlásit se z „prodeje“ nebo „sdílení“ osobních údajů. Osobní údaje neprodáváme. Chcete-li uplatnit svá práva, kontaktujte nás na adrese [[email:hello@affsquad.com]].'] },
+      { title: '11. Vaše práva na ochranu soukromí (GDPR/UK GDPR)', paragraphs: ['Pokud se nacházíte v EHP nebo ve Spojeném království, máte právo na přístup ke svým osobním údajům, jejich opravu, výmaz, omezení zpracování nebo vznesení námitky proti jejich zpracování, jakož i právo na přenositelnost údajů a právo kdykoli odvolat souhlas. Chcete-li tato práva uplatnit, kontaktujte nás na adrese [[email:hello@ttwrapper.com]]. Máte také právo podat stížnost u svého místního dozorového úřadu pro ochranu osobních údajů.'] },
+      { title: '12. Práva na ochranu soukromí v Kalifornii (CCPA/CPRA)', paragraphs: ['Obyvatelé Kalifornie mají právo vědět, jaké osobní údaje jsou shromažďovány, požádat o jejich výmaz a odhlásit se z „prodeje“ nebo „sdílení“ osobních údajů. Osobní údaje neprodáváme. Chcete-li uplatnit svá práva, kontaktujte nás na adrese [[email:hello@ttwrapper.com]].'] },
       { title: '13. Mezinárodní předávání dat', paragraphs: ['Naši poskytovatelé mohou zpracovávat data na serverech umístěných mimo vaši zemi, včetně Spojených států. Tam, kde je to vyžadováno, jsou taková předání chráněna vhodnými zárukami, jako jsou standardní smluvní doložky poskytovatelů.'] },
       { title: '14. Soukromí dětí', paragraphs: ['TikTok Wrapped není určeno dětem mladším 13 let a vědomě od nich neshromažďujeme osobní údaje. Na získání exportu dat se vztahují vlastní požadavky TikToku na minimální věk.'] },
       { title: '15. Změny těchto zásad', paragraphs: ['Tyto Zásady ochrany osobních údajů můžeme čas od času aktualizovat. Podstatné změny budou zohledněny aktualizací data „Naposledy aktualizováno“ v horní části této stránky.'] },
-      { title: '16. Kontakt', paragraphs: ['Máte dotazy k těmto Zásadám ochrany osobních údajů? Napište na [[email:hello@affsquad.com]] nebo použijte naši stránku [[contact:Kontakt]].'] },
+      { title: '16. Kontakt', paragraphs: ['Máte dotazy k těmto Zásadám ochrany osobních údajů? Napište na [[email:hello@ttwrapper.com]] nebo použijte naši stránku [[contact:Kontakt]].'] },
     ],
   },
 
@@ -323,7 +323,7 @@ export const dictionary: Dictionary = {
       { title: 'Omezení odpovědnosti', paragraphs: ['TikTok Wrapped neodpovídá za:'], list: ['rozhodnutí učiněná na základě vytvořených přehledů,', 'ztrátu dat způsobenou chybou uživatele,', 'přerušení nebo dočasnou nedostupnost služby.'] },
       { title: 'Rozhodné právo', paragraphs: ['Tyto Podmínky se řídí a vykládají v souladu s platnými předpisy na ochranu spotřebitele a obecnými právními předpisy, bez ohledu na kolizní normy. Případné spory budou řešeny příslušnými soudy v místě sídla provozovatele.'] },
       { title: 'Změny těchto podmínek', paragraphs: ['Tyto Podmínky můžeme čas od času aktualizovat. Změny nabývají účinnosti zveřejněním a datum „Naposledy aktualizováno“ výše bude odrážet nejnovější verzi. Pokračující používání webu po provedení změn představuje přijetí aktualizovaných Podmínek.'] },
-      { title: 'Kontakt', paragraphs: ['Máte dotazy k těmto Podmínkám? Napište na [[email:hello@affsquad.com]] nebo použijte naši stránku [[contact:Kontakt]].'] },
+      { title: 'Kontakt', paragraphs: ['Máte dotazy k těmto Podmínkám? Napište na [[email:hello@ttwrapper.com]] nebo použijte naši stránku [[contact:Kontakt]].'] },
     ],
   },
 
@@ -365,7 +365,7 @@ export const dictionary: Dictionary = {
     contact: {
       title: 'Kontaktujte nás - TikTok Wrapped',
       description:
-        'Kontaktujte TikTok Wrapped s dotazy ohledně služby, soukromí, technických problémů nebo právních záležitostí. E-mail: hello@affsquad.com',
+        'Kontaktujte TikTok Wrapped s dotazy ohledně služby, soukromí, technických problémů nebo právních záležitostí. E-mail: hello@ttwrapper.com',
     },
     privacy: {
       title: 'Zásady ochrany osobních údajů - TikTok Wrapped',

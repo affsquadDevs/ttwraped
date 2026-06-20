@@ -16,7 +16,7 @@ const INTERNAL: Record<string, string> = {
 }
 
 const EXTERNAL: Record<string, string> = {
-  email: 'mailto:hello@affsquad.com',
+  email: 'mailto:hello@ttwrapper.com',
   adsSettings: 'https://adssettings.google.com',
   aboutAds: 'https://www.aboutads.info/choices',
   yourChoices: 'https://www.youronlinechoices.eu',

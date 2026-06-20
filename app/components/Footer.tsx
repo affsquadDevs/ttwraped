@@ -81,7 +81,7 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
             contactPoint: {
               '@type': 'ContactPoint',
               contactType: 'Customer Service',
-              email: 'hello@affsquad.com',
+              email: 'hello@ttwrapper.com',
               url: 'https://ttwrapper.com/contact',
             },
           }),

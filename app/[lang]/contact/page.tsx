@@ -35,8 +35,8 @@ export default async function ContactPage({ params }: { params: { lang: string }
             <h2 className="contact-section-title">{c.howToTitle}</h2>
             <div className="contact-method">
               <div className="contact-method-label">{c.emailLabel}</div>
-              <a href="mailto:hello@affsquad.com" className="contact-email">
-                hello@affsquad.com
+              <a href="mailto:hello@ttwrapper.com" className="contact-email">
+                hello@ttwrapper.com
               </a>
             </div>
             <p className="contact-note">{c.responseNote}</p>

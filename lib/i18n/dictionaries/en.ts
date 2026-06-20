@@ -241,7 +241,7 @@ export const dictionary = {
       'The website allows users to upload their own TikTok data export and receive automated insights based solely on that file. The service focuses on summarization, visualization, and general analysis of usage patterns to help users gain a better understanding of their digital behavior.',
       'TikTok Wrapped does not create accounts, does not require registration, and does not provide social networking or content hosting features. The website exists solely as an informational tool that processes user-provided files at the user’s request.',
       'We aim to provide a simple, transparent, and privacy-focused experience. The website is free to use and supported by advertising; see our [[privacy:Privacy Policy]] for how cookies and ads work.',
-      'TikTok Wrapped is operated by AffSquad and can be reached at [[email:hello@affsquad.com]]. It is an independent, unofficial tool and is not affiliated with, endorsed by, or connected to TikTok or ByteDance Ltd.',
+      'TikTok Wrapped is operated by AffSquad and can be reached at [[email:hello@ttwrapper.com]]. It is an independent, unofficial tool and is not affiliated with, endorsed by, or connected to TikTok or ByteDance Ltd.',
     ],
     faqTitle: 'FAQ',
     faq: [
@@ -291,7 +291,7 @@ export const dictionary = {
       ],
     },
     sections: [
-      { title: '1. Who We Are (Data Controller)', paragraphs: ['TikTok Wrapped is operated by AffSquad, the data controller responsible for this website. If you have any questions about this policy or how your data is handled, you can contact us at [[email:hello@affsquad.com]] or via our [[contact:Contact]] page.'] },
+      { title: '1. Who We Are (Data Controller)', paragraphs: ['TikTok Wrapped is operated by AffSquad, the data controller responsible for this website. If you have any questions about this policy or how your data is handled, you can contact us at [[email:hello@ttwrapper.com]] or via our [[contact:Contact]] page.'] },
       { title: '2. Your Uploaded TikTok Data', paragraphs: ['When you use the analyzer, your TikTok data export (ZIP or JSON) is read and processed entirely within your own browser. The file is not uploaded to or stored on our servers, and we do not build profiles or databases from it. The analysis exists only in your browser tab and is gone when you close or refresh the page.', 'We do not require account creation, login, or personal identification to use the analyzer.'] },
       { title: '3. Information Collected Automatically', paragraphs: ['Like most websites, when you visit ttwrapper.com certain technical information may be collected through cookies and similar technologies by us and by third-party providers (such as Google), including:'], list: ['device and browser type, screen size, and operating system;', 'IP address (used to approximate general location and for security);', 'pages visited, referring URLs, and interaction events;', 'cookie identifiers used for analytics and advertising.'], afterList: ['This information is processed only where you have given consent or where we have a legitimate interest, as described below.'] },
       { title: '4. Cookies and Similar Technologies', paragraphs: ['We use cookies and similar technologies for essential functionality, analytics, and advertising. Non-essential cookies (analytics and advertising) are only set after you give consent through our cookie banner. The main categories are:'], hasCookieTable: true, afterList: ['You can change or withdraw your consent at any time using the “Cookie settings” link in the website footer.'] },
@@ -301,12 +301,12 @@ export const dictionary = {
       { title: '8. How We Use Information', paragraphs: [], list: ['to operate, maintain, and secure the website;', 'to generate insights from the data you choose to analyze (in your browser);', 'to understand aggregate usage and improve the service;', 'to display advertising that helps fund the free service.'], afterList: ['We do not sell your personal information, and we do not use your uploaded TikTok export for advertising or profiling.'] },
       { title: '9. Data Sharing', paragraphs: ['We do not share your uploaded TikTok data with anyone. Technical and cookie data described above may be processed by our service providers, including Google (advertising and analytics) and our hosting provider (Vercel), each acting under their own privacy policies.'] },
       { title: '10. Data Retention', paragraphs: ['Your uploaded TikTok export is never stored by us, so there is nothing to retain or delete on our side. Aggregate analytics and advertising data held by our providers are retained according to their own retention periods (for example, Google’s standard retention settings).'] },
-      { title: '11. Your Privacy Rights (GDPR/UK GDPR)', paragraphs: ['If you are in the EEA or the UK, you have the right to access, rectify, erase, restrict, or object to the processing of your personal data, and the right to data portability and to withdraw consent at any time. To exercise these rights, contact us at [[email:hello@affsquad.com]]. You also have the right to lodge a complaint with your local data protection authority.'] },
-      { title: '12. California Privacy Rights (CCPA/CPRA)', paragraphs: ['California residents have the right to know what personal information is collected, to request deletion, and to opt out of the “sale” or “sharing” of personal information. We do not sell personal information. To exercise your rights, contact us at [[email:hello@affsquad.com]].'] },
+      { title: '11. Your Privacy Rights (GDPR/UK GDPR)', paragraphs: ['If you are in the EEA or the UK, you have the right to access, rectify, erase, restrict, or object to the processing of your personal data, and the right to data portability and to withdraw consent at any time. To exercise these rights, contact us at [[email:hello@ttwrapper.com]]. You also have the right to lodge a complaint with your local data protection authority.'] },
+      { title: '12. California Privacy Rights (CCPA/CPRA)', paragraphs: ['California residents have the right to know what personal information is collected, to request deletion, and to opt out of the “sale” or “sharing” of personal information. We do not sell personal information. To exercise your rights, contact us at [[email:hello@ttwrapper.com]].'] },
       { title: '13. International Data Transfers', paragraphs: ['Our providers may process data on servers located outside your country, including the United States. Where required, such transfers are protected by appropriate safeguards such as the providers’ standard contractual clauses.'] },
       { title: '14. Children’s Privacy', paragraphs: ['TikTok Wrapped is not directed to children under 13, and we do not knowingly collect personal information from them. TikTok’s own minimum-age requirements apply to obtaining a data export.'] },
       { title: '15. Changes to This Policy', paragraphs: ['We may update this Privacy Policy from time to time. Material changes will be reflected by updating the “Last updated” date at the top of this page.'] },
-      { title: '16. Contact', paragraphs: ['Questions about this Privacy Policy? Email [[email:hello@affsquad.com]] or use our [[contact:Contact]] page.'] },
+      { title: '16. Contact', paragraphs: ['Questions about this Privacy Policy? Email [[email:hello@ttwrapper.com]] or use our [[contact:Contact]] page.'] },
     ],
   },
 
@@ -325,7 +325,7 @@ export const dictionary = {
       { title: 'Limitation of Liability', paragraphs: ['TikTok Wrapped is not responsible for:'], list: ['decisions made based on generated insights,', 'data loss caused by user error,', 'interruptions or temporary unavailability of the service.'] },
       { title: 'Governing Law', paragraphs: ['These Terms are governed by and construed in accordance with applicable consumer-protection and general laws, without regard to conflict-of-law principles. Any disputes will be handled by the competent courts of the operator’s place of business.'] },
       { title: 'Changes to These Terms', paragraphs: ['We may update these Terms from time to time. Changes take effect when posted, and the “Last updated” date above will reflect the latest version. Continued use of the website after changes constitutes acceptance of the updated Terms.'] },
-      { title: 'Contact', paragraphs: ['Questions about these Terms? Email [[email:hello@affsquad.com]] or use our [[contact:Contact]] page.'] },
+      { title: 'Contact', paragraphs: ['Questions about these Terms? Email [[email:hello@ttwrapper.com]] or use our [[contact:Contact]] page.'] },
     ],
   },
 
@@ -367,7 +367,7 @@ export const dictionary = {
     contact: {
       title: 'Contact Us - TikTok Wrapped',
       description:
-        'Contact TikTok Wrapped for questions about the service, privacy, technical issues, or legal matters. Email: hello@affsquad.com',
+        'Contact TikTok Wrapped for questions about the service, privacy, technical issues, or legal matters. Email: hello@ttwrapper.com',
     },
     privacy: {
       title: 'Privacy Policy - TikTok Wrapped',

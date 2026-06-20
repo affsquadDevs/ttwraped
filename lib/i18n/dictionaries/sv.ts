@@ -239,7 +239,7 @@ export const dictionary: Dictionary = {
       'Webbplatsen låter användare ladda upp sin egen exporterade TikTok-data och få automatiserade insikter som enbart baseras på den filen. Tjänsten fokuserar på sammanfattning, visualisering och allmän analys av användningsmönster för att hjälpa användare att få en bättre förståelse för sitt digitala beteende.',
       'TikTok Wrapped skapar inga konton, kräver ingen registrering och erbjuder inga funktioner för sociala nätverk eller innehållslagring. Webbplatsen finns enbart som ett informationsverktyg som bearbetar användartillhandahållna filer på användarens begäran.',
       'Vi strävar efter att erbjuda en enkel, transparent och integritetsfokuserad upplevelse. Webbplatsen är gratis att använda och finansieras genom annonsering; se vår [[privacy:integritetspolicy]] för hur cookies och annonser fungerar.',
-      'TikTok Wrapped drivs av AffSquad och kan nås på [[email:hello@affsquad.com]]. Det är ett oberoende, inofficiellt verktyg och är inte anslutet till, godkänt av eller på något sätt kopplat till TikTok eller ByteDance Ltd.',
+      'TikTok Wrapped drivs av AffSquad och kan nås på [[email:hello@ttwrapper.com]]. Det är ett oberoende, inofficiellt verktyg och är inte anslutet till, godkänt av eller på något sätt kopplat till TikTok eller ByteDance Ltd.',
     ],
     faqTitle: 'Vanliga frågor',
     faq: [
@@ -289,7 +289,7 @@ export const dictionary: Dictionary = {
       ],
     },
     sections: [
-      { title: '1. Vilka vi är (personuppgiftsansvarig)', paragraphs: ['TikTok Wrapped drivs av AffSquad, den personuppgiftsansvarige som ansvarar för denna webbplats. Om du har några frågor om denna policy eller hur dina uppgifter hanteras kan du kontakta oss på [[email:hello@affsquad.com]] eller via vår [[contact:kontaktsida]].'] },
+      { title: '1. Vilka vi är (personuppgiftsansvarig)', paragraphs: ['TikTok Wrapped drivs av AffSquad, den personuppgiftsansvarige som ansvarar för denna webbplats. Om du har några frågor om denna policy eller hur dina uppgifter hanteras kan du kontakta oss på [[email:hello@ttwrapper.com]] eller via vår [[contact:kontaktsida]].'] },
       { title: '2. Din uppladdade TikTok-data', paragraphs: ['När du använder analysverktyget läses och bearbetas din exporterade TikTok-data (ZIP eller JSON) helt och hållet i din egen webbläsare. Filen laddas inte upp till eller lagras på våra servrar, och vi bygger inga profiler eller databaser utifrån den. Analysen finns endast i din webbläsarflik och försvinner när du stänger eller uppdaterar sidan.', 'Vi kräver ingen kontoregistrering, inloggning eller personlig identifiering för att använda analysverktyget.'] },
       { title: '3. Information som samlas in automatiskt', paragraphs: ['Som på de flesta webbplatser kan viss teknisk information samlas in när du besöker ttwrapper.com, genom cookies och liknande tekniker av oss och av tredjepartsleverantörer (såsom Google), inklusive:'], list: ['enhets- och webbläsartyp, skärmstorlek och operativsystem;', 'IP-adress (används för att uppskatta ungefärlig plats och av säkerhetsskäl);', 'besökta sidor, hänvisande URL:er och interaktionshändelser;', 'cookie-identifierare som används för analys och annonsering.'], afterList: ['Denna information bearbetas endast där du har gett ditt samtycke eller där vi har ett berättigat intresse, enligt beskrivningen nedan.'] },
       { title: '4. Cookies och liknande tekniker', paragraphs: ['Vi använder cookies och liknande tekniker för nödvändig funktionalitet, analys och annonsering. Icke-nödvändiga cookies (analys och annonsering) sätts endast efter att du har gett ditt samtycke via vår cookie-banner. De huvudsakliga kategorierna är:'], hasCookieTable: true, afterList: ['Du kan ändra eller återkalla ditt samtycke när som helst via länken ”Cookie-inställningar” i sidfoten.'] },
@@ -299,12 +299,12 @@ export const dictionary: Dictionary = {
       { title: '8. Hur vi använder information', paragraphs: [], list: ['för att driva, underhålla och säkra webbplatsen;', 'för att generera insikter från den data du väljer att analysera (i din webbläsare);', 'för att förstå aggregerad användning och förbättra tjänsten;', 'för att visa annonser som hjälper till att finansiera den kostnadsfria tjänsten.'], afterList: ['Vi säljer inte dina personuppgifter och vi använder inte din uppladdade TikTok-export för annonsering eller profilering.'] },
       { title: '9. Delning av data', paragraphs: ['Vi delar inte din uppladdade TikTok-data med någon. Teknisk data och cookie-data som beskrivs ovan kan bearbetas av våra tjänsteleverantörer, inklusive Google (annonsering och analys) och vår värdleverantör (Vercel), som var och en agerar enligt sina egna integritetspolicyer.'] },
       { title: '10. Lagring av data', paragraphs: ['Din uppladdade TikTok-export lagras aldrig av oss, så det finns inget att bevara eller radera hos oss. Aggregerad analys- och annonsdata som innehas av våra leverantörer bevaras enligt deras egna lagringsperioder (till exempel Googles standardinställningar för lagring).'] },
-      { title: '11. Dina integritetsrättigheter (GDPR/UK GDPR)', paragraphs: ['Om du befinner dig inom EES eller i Storbritannien har du rätt att få tillgång till, rätta, radera, begränsa eller invända mot behandlingen av dina personuppgifter, samt rätt till dataportabilitet och att återkalla samtycke när som helst. För att utöva dessa rättigheter, kontakta oss på [[email:hello@affsquad.com]]. Du har också rätt att lämna in ett klagomål till din lokala dataskyddsmyndighet.'] },
-      { title: '12. Integritetsrättigheter i Kalifornien (CCPA/CPRA)', paragraphs: ['Invånare i Kalifornien har rätt att få veta vilka personuppgifter som samlas in, att begära radering och att välja bort ”försäljning” eller ”delning” av personuppgifter. Vi säljer inte personuppgifter. För att utöva dina rättigheter, kontakta oss på [[email:hello@affsquad.com]].'] },
+      { title: '11. Dina integritetsrättigheter (GDPR/UK GDPR)', paragraphs: ['Om du befinner dig inom EES eller i Storbritannien har du rätt att få tillgång till, rätta, radera, begränsa eller invända mot behandlingen av dina personuppgifter, samt rätt till dataportabilitet och att återkalla samtycke när som helst. För att utöva dessa rättigheter, kontakta oss på [[email:hello@ttwrapper.com]]. Du har också rätt att lämna in ett klagomål till din lokala dataskyddsmyndighet.'] },
+      { title: '12. Integritetsrättigheter i Kalifornien (CCPA/CPRA)', paragraphs: ['Invånare i Kalifornien har rätt att få veta vilka personuppgifter som samlas in, att begära radering och att välja bort ”försäljning” eller ”delning” av personuppgifter. Vi säljer inte personuppgifter. För att utöva dina rättigheter, kontakta oss på [[email:hello@ttwrapper.com]].'] },
       { title: '13. Internationella dataöverföringar', paragraphs: ['Våra leverantörer kan bearbeta data på servrar som finns utanför ditt land, inklusive i USA. Där det krävs skyddas sådana överföringar av lämpliga skyddsåtgärder, såsom leverantörernas standardavtalsklausuler.'] },
       { title: '14. Barns integritet', paragraphs: ['TikTok Wrapped riktar sig inte till barn under 13 år, och vi samlar inte medvetet in personuppgifter från dem. TikToks egna åldersgränser gäller för att erhålla en dataexport.'] },
       { title: '15. Ändringar i denna policy', paragraphs: ['Vi kan komma att uppdatera denna integritetspolicy då och då. Väsentliga ändringar återspeglas genom att datumet ”Senast uppdaterad” högst upp på denna sida uppdateras.'] },
-      { title: '16. Kontakt', paragraphs: ['Frågor om denna integritetspolicy? Mejla [[email:hello@affsquad.com]] eller använd vår [[contact:kontaktsida]].'] },
+      { title: '16. Kontakt', paragraphs: ['Frågor om denna integritetspolicy? Mejla [[email:hello@ttwrapper.com]] eller använd vår [[contact:kontaktsida]].'] },
     ],
   },
 
@@ -323,7 +323,7 @@ export const dictionary: Dictionary = {
       { title: 'Ansvarsbegränsning', paragraphs: ['TikTok Wrapped ansvarar inte för:'], list: ['beslut som fattats baserat på genererade insikter,', 'dataförlust orsakad av användarfel,', 'avbrott eller tillfällig otillgänglighet av tjänsten.'] },
       { title: 'Tillämplig lag', paragraphs: ['Dessa villkor regleras av och tolkas i enlighet med tillämplig konsumentskyddslagstiftning och allmän lagstiftning, utan hänsyn till lagvalsprinciper. Eventuella tvister hanteras av behöriga domstolar på operatörens verksamhetsort.'] },
       { title: 'Ändringar av dessa villkor', paragraphs: ['Vi kan komma att uppdatera dessa villkor då och då. Ändringar träder i kraft när de publiceras, och datumet ”Senast uppdaterad” ovan återspeglar den senaste versionen. Fortsatt användning av webbplatsen efter ändringar innebär att du godkänner de uppdaterade villkoren.'] },
-      { title: 'Kontakt', paragraphs: ['Frågor om dessa villkor? Mejla [[email:hello@affsquad.com]] eller använd vår [[contact:kontaktsida]].'] },
+      { title: 'Kontakt', paragraphs: ['Frågor om dessa villkor? Mejla [[email:hello@ttwrapper.com]] eller använd vår [[contact:kontaktsida]].'] },
     ],
   },
 
@@ -365,7 +365,7 @@ export const dictionary: Dictionary = {
     contact: {
       title: 'Kontakta oss - TikTok Wrapped',
       description:
-        'Kontakta TikTok Wrapped för frågor om tjänsten, integritet, tekniska problem eller juridiska frågor. E-post: hello@affsquad.com',
+        'Kontakta TikTok Wrapped för frågor om tjänsten, integritet, tekniska problem eller juridiska frågor. E-post: hello@ttwrapper.com',
     },
     privacy: {
       title: 'Integritetspolicy - TikTok Wrapped',

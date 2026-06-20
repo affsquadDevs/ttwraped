@@ -3,91 +3,42 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { localizedPath, stripLocalePrefix, type Locale } from '@/lib/i18n/config'
+import type { Dictionary } from '@/lib/i18n/dictionaries/en'
+import LanguageSwitcher from './LanguageSwitcher'
 
-export default function Header() {
+export default function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
+  const base = stripLocalePrefix(pathname || '/')
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
-    }
+    const handleScroll = () => setIsScrolled(window.scrollY > 20)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  useEffect(() => {
-    if (
-      (pathname === '/' || pathname === '/analyze-wrapped') &&
-      typeof window !== 'undefined' &&
-      window.location.hash
-    ) {
-      const hash = window.location.hash
-      setTimeout(() => {
-        const element = document.querySelector(hash)
-        if (element) {
-          const headerHeight = 80
-          const elementPosition =
-            element.getBoundingClientRect().top + window.pageYOffset
-          window.scrollTo({
-            top: elementPosition - headerHeight,
-            behavior: 'smooth',
-          })
-        }
-      }, 100)
-    }
-  }, [pathname])
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
-
-  const closeMenu = () => {
-    setIsMenuOpen(false)
-  }
+  const closeMenu = () => setIsMenuOpen(false)
 
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/analyze-wrapped#upload-section', label: 'Analyze' },
-    { href: '/about', label: 'About' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/contact', label: 'Contact' },
+    { base: '/', href: localizedPath('/', locale), label: dict.nav.home },
+    { base: '/analyze-wrapped', href: `${localizedPath('/analyze-wrapped', locale)}#upload-section`, label: dict.nav.analyze },
+    { base: '/example-wrapped', href: localizedPath('/example-wrapped', locale), label: dict.nav.example },
+    { base: '/about', href: localizedPath('/about', locale), label: dict.nav.about },
+    { base: '/blog', href: localizedPath('/blog', locale), label: dict.nav.blog },
+    { base: '/contact', href: localizedPath('/contact', locale), label: dict.nav.contact },
   ]
 
-  const handleLinkClick = (href: string, e: React.MouseEvent<HTMLAnchorElement>) => {
-    closeMenu()
-    
-    if (href.startsWith('/#')) {
-      e.preventDefault()
-      const hash = href.substring(1)
-      
-      if (pathname === '/') {
-        const element = document.querySelector(hash)
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        }
-      } else {
-        window.location.href = href
-      }
-    }
-  }
-
-  const isActive = (href: string) => {
-    if (href === '/') {
-      return pathname === '/'
-    }
-    const pathOnly = href.split('#')[0]
-    if (pathOnly && pathOnly.length > 1) {
-      return pathname === pathOnly || pathname?.startsWith(`${pathOnly}/`)
-    }
-    return pathname === href || pathname?.startsWith(href)
+  const isActive = (linkBase: string) => {
+    if (linkBase === '/') return base === '/'
+    return base === linkBase || base.startsWith(`${linkBase}/`)
   }
 
   return (
     <header className={`site-header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <Link href="/" className="header-logo" onClick={closeMenu}>
+        <Link href={localizedPath('/', locale)} className="header-logo" onClick={closeMenu}>
           <span className="cyan">Tik</span>
           <span className="pink">Tok</span>
           <span className="white">Wrapped</span>
@@ -96,22 +47,25 @@ export default function Header() {
         <nav className={`header-nav ${isMenuOpen ? 'open' : ''}`}>
           <ul className="header-nav-list">
             {navLinks.map((link) => (
-              <li key={link.href}>
+              <li key={link.base}>
                 <Link
                   href={link.href}
-                  className={`header-link ${isActive(link.href) ? 'active' : ''}`}
-                  onClick={(e) => handleLinkClick(link.href, e)}
+                  className={`header-link ${isActive(link.base) ? 'active' : ''}`}
+                  onClick={closeMenu}
                 >
                   {link.label}
                 </Link>
               </li>
             ))}
+            <li className="header-lang-item">
+              <LanguageSwitcher locale={locale} />
+            </li>
           </ul>
         </nav>
 
         <button
           className={`header-menu-toggle ${isMenuOpen ? 'open' : ''}`}
-          onClick={toggleMenu}
+          onClick={() => setIsMenuOpen((v) => !v)}
           aria-label="Toggle menu"
         >
           <span></span>
@@ -122,4 +76,3 @@ export default function Header() {
     </header>
   )
 }
-

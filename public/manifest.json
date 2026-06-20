@@ -1,28 +1,27 @@
 {
-  "name": "TikTok Wrapped",
+  "name": "TikTok Wrapped (Unofficial)",
   "short_name": "TikTok Wrapped",
-  "description": "Discover your TikTok stats and personality rank",
+  "description": "Independent, unofficial tool to analyze your TikTok data export — stats, watch time and a personality rank. Not affiliated with TikTok.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#030014",
-  "theme_color": "#fe2c55",
+  "background_color": "#0f0a1e",
+  "theme_color": "#7c3aed",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
     },
     {
-      "src": "/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
     }
   ],
   "categories": ["utilities", "entertainment", "social"],
   "lang": "en",
   "dir": "ltr"
 }
-

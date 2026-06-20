@@ -26,10 +26,8 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  icons: {
-    icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
-    shortcut: '/icon.svg',
-  },
+  // Favicons are provided by the file-based conventions: app/favicon.ico,
+  // app/icon.svg, and app/apple-icon.tsx.
   manifest: '/manifest.json',
   category: 'technology',
 }

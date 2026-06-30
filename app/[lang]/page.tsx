@@ -20,6 +20,19 @@ export default async function Home({ params }: { params: { lang: string } }) {
   const h = dict.home
   const lp = (p: string) => localizedPath(p, locale)
 
+  // Reuse the already-translated About FAQ — it answers the high-intent
+  // "is it free / safe / official / do you store my file" questions that
+  // suppress click-through on the "tiktok wrapped" SERP.
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: dict.about.faq.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  }
+
   return (
     <div className="container">
       <div className="hero-section">
@@ -42,6 +55,12 @@ export default async function Home({ params }: { params: { lang: string } }) {
               <span className="feature-icon">{i === 0 ? '🎰' : '📊'}</span>
               <span>{feat}</span>
             </div>
+          ))}
+        </div>
+
+        <div className="trust-badges">
+          {h.trust.map((t, i) => (
+            <span key={i} className="trust-badge">✓ {t}</span>
           ))}
         </div>
 
@@ -125,6 +144,20 @@ export default async function Home({ params }: { params: { lang: string } }) {
           <RichText text={h.demoCta} locale={locale} />
         </p>
       </div>
+
+      <div className="card faq-card" id="faq">
+        <h2 className="section-title">{dict.about.faqTitle}</h2>
+        <div className="faq-container">
+          {dict.about.faq.map((item, i) => (
+            <div key={i} className="faq-item">
+              <h3 className="faq-question">{item.q}</h3>
+              <p className="faq-answer">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </div>
   )
 }

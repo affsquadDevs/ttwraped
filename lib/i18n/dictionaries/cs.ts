@@ -59,6 +59,7 @@ export const dictionary: Dictionary = {
   },
 
   home: {
+    trust: ["Zdarma", "100% soukromé", "Bez přihlášení"],
     logoSubtitle: 'Analyzujte svůj export dat z TikToku',
     heroTagline: 'Váš rok na TikToku, odhalený 🎬',
     heroPlatformTagline:

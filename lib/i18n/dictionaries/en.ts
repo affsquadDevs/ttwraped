@@ -61,6 +61,7 @@ export const dictionary = {
   },
 
   home: {
+    trust: ["Free", "100% private", "No login"],
     logoSubtitle: 'Analyze Your TikTok Data Export',
     heroTagline: 'Your Year on TikTok, Revealed 🎬',
     heroPlatformTagline:
@@ -345,9 +346,9 @@ export const dictionary = {
 
   meta: {
     home: {
-      title: 'TikTok Wrapped (Unofficial) — Analyze Your TikTok Data & Stats',
+      title: 'TikTok Wrapped (Unofficial) — Free TikTok Stats & Recap',
       description:
-        'TikTok Wrapped is an independent, unofficial tool that analyzes your official TikTok data export to reveal your watch time, top searches, favorite content and a fun personality rank. Private, free, and not affiliated with TikTok or ByteDance Ltd.',
+        'See your TikTok Wrapped: watch time, top searches, favorite creators & a fun personality rank, built from your TikTok data export. Free, private, no login — your file never leaves your browser. Unofficial tool.',
     },
     analyze: {
       title: 'Analyze Your TikTok Data Export — Upload & Get Your Stats',

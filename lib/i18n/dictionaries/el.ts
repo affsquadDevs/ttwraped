@@ -59,6 +59,7 @@ export const dictionary: Dictionary = {
   },
 
   home: {
+    trust: ["Δωρεάν", "100% ιδιωτικό", "Χωρίς σύνδεση"],
     logoSubtitle: 'Αναλύστε την Εξαγωγή Δεδομένων σας από το TikTok',
     heroTagline: 'Η Χρονιά σου στο TikTok, Αποκαλύπτεται 🎬',
     heroPlatformTagline:

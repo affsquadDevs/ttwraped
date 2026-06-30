@@ -59,6 +59,7 @@ export const dictionary: Dictionary = {
   },
 
   home: {
+    trust: ["Gratuit", "100% privé", "Sans inscription"],
     logoSubtitle: "Analysez l'export de vos données TikTok",
     heroTagline: 'Votre année sur TikTok, dévoilée 🎬',
     heroPlatformTagline:

@@ -3497,3 +3497,34 @@ input[type="file"] {
     animation: none;
   }
 }
+
+/* Hero trust badges (free / private / no login) */
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0 auto 1.5rem;
+  max-width: 560px;
+}
+
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: 50px;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #fbbf24;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .trust-badge {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.75rem;
+  }
+}

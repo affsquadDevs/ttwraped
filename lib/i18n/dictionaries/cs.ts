@@ -344,9 +344,9 @@ export const dictionary: Dictionary = {
 
   meta: {
     home: {
-      title: 'TikTok Wrapped (neoficiální) — Analyzujte svá data a statistiky z TikToku',
+      title: 'TikTok Wrapped (Neoficiální) — Statistiky a přehled TikToku zdarma',
       description:
-        'TikTok Wrapped je nezávislý, neoficiální nástroj, který analyzuje váš oficiální export dat z TikToku a odhalí váš čas sledování, nejčastější vyhledávání, oblíbený obsah i zábavné hodnocení osobnosti. Soukromé, zdarma a bez spojení s TikTokem či ByteDance Ltd.',
+        'Podívejte se na svůj TikTok Wrapped: čas sledování, nejčastější vyhledávání, oblíbené tvůrce a zábavné hodnocení osobnosti, vytvořené z exportu vašich dat z TikToku. Zdarma, soukromé, bez přihlášení — váš soubor nikdy neopustí váš prohlížeč. Neoficiální nástroj.',
     },
     analyze: {
       title: 'Analyzujte svůj export dat z TikToku — Nahrajte a získejte statistiky',

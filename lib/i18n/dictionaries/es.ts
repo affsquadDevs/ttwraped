@@ -344,9 +344,9 @@ export const dictionary: Dictionary = {
 
   meta: {
     home: {
-      title: 'TikTok Wrapped (no oficial) — Analiza tus datos y estadísticas de TikTok',
+      title: 'TikTok Wrapped (No oficial) — Estadísticas y resumen gratis',
       description:
-        'TikTok Wrapped es una herramienta independiente y no oficial que analiza la exportación oficial de tus datos de TikTok para revelar tu tiempo de visualización, tus búsquedas principales, tu contenido favorito y un divertido rango de personalidad. Privada, gratuita y no afiliada a TikTok ni ByteDance Ltd.',
+        'Descubre tu TikTok Wrapped: tiempo de visualización, búsquedas principales, creadores favoritos y un divertido rango de personalidad, generado desde la exportación de tus datos de TikTok. Gratis, privado y sin registro: tu archivo nunca sale de tu navegador. Herramienta no oficial.',
     },
     analyze: {
       title: 'Analiza la exportación de tus datos de TikTok — Sube y obtén tus estadísticas',

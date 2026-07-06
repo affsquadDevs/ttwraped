@@ -4,7 +4,9 @@ import { posts } from '@/lib/blog/registry'
 export const dynamic = 'force-static'
 
 const STATIC_PATHS = ['/', '/analyze-wrapped', '/example-wrapped', '/blog', '/about', '/contact', '/privacy', '/terms']
-const BUILD_DATE = '2026-06-20'
+// Stamped at build time (force-static) so each production deploy refreshes the
+// <lastmod> of the static pages, signalling Google to recrawl the changes.
+const BUILD_DATE = new Date().toISOString().slice(0, 10)
 
 function urlEntries(path: string, lastmod: string): string {
   const languages = alternateLanguages(path)

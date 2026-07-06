@@ -344,7 +344,7 @@ export const dictionary: Dictionary = {
 
   meta: {
     home: {
-      title: 'TikTok Wrapped (Non ufficiale) — Statistiche e recap TikTok gratis',
+      title: 'TikTok Wrapped — Statistiche e recap TikTok gratis',
       description:
         "Scopri il tuo TikTok Wrapped: tempo di visione, ricerche principali, creator preferiti e una divertente classifica della personalità, generato dall'esportazione dei tuoi dati TikTok. Gratis, privato, senza login — il tuo file non lascia mai il browser. Strumento non ufficiale.",
     },

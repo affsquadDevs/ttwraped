@@ -344,7 +344,7 @@ export const dictionary: Dictionary = {
 
   meta: {
     home: {
-      title: 'TikTok Wrapped (Neoficiální) — Statistiky a přehled TikToku zdarma',
+      title: 'TikTok Wrapped — Statistiky a přehled TikToku zdarma',
       description:
         'Podívejte se na svůj TikTok Wrapped: čas sledování, nejčastější vyhledávání, oblíbené tvůrce a zábavné hodnocení osobnosti, vytvořené z exportu vašich dat z TikToku. Zdarma, soukromé, bez přihlášení — váš soubor nikdy neopustí váš prohlížeč. Neoficiální nástroj.',
     },

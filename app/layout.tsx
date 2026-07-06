@@ -9,7 +9,7 @@ import { defaultLocale, isLocale } from '@/lib/i18n/config'
 // titles/descriptions/hreflang are set by each route's generateMetadata.
 export const metadata: Metadata = {
   metadataBase: new URL('https://ttwrapper.com'),
-  title: 'TikTok Wrapped (Unofficial) — Analyze Your TikTok Data & Stats',
+  title: 'TikTok Wrapped — Analyze Your TikTok Data & Stats',
   description:
     'TikTok Wrapped is an independent, unofficial tool that analyzes your official TikTok data export to reveal your watch time, top searches, favorite content and a fun personality rank. Private, free, and not affiliated with TikTok or ByteDance Ltd.',
   authors: [{ name: 'TikTok Wrapped' }],

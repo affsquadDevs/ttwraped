@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -10,7 +9,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: 'Sora', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: var(--font-sora), -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #030014;
@@ -33,7 +32,6 @@ body::before {
     radial-gradient(circle at 20% 80%, rgba(6, 182, 212, 0.08) 0%, transparent 30%);
   pointer-events: none;
   z-index: -1;
-  animation: meshMove 20s ease-in-out infinite;
 }
 
 @keyframes meshMove {
@@ -57,7 +55,6 @@ body::after {
   background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
   border-radius: 50%;
   filter: blur(40px);
-  animation: floatOrb 8s ease-in-out infinite;
   pointer-events: none;
   z-index: -1;
 }
@@ -115,7 +112,7 @@ body::after {
 }
 
 .logo-text {
-  font-family: 'Sora', sans-serif;
+  font-family: var(--font-sora), sans-serif;
   font-size: 3rem;
   font-weight: 800;
   letter-spacing: -2px;
@@ -584,8 +581,8 @@ body::after {
   border-radius: 28px;
   padding: 2rem;
   margin-bottom: 1.5rem;
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
   position: relative;
   overflow: hidden;
   box-shadow: 
@@ -700,7 +697,7 @@ body::after {
 }
 
 h1 {
-  font-family: 'Sora', sans-serif;
+  font-family: var(--font-sora), sans-serif;
   font-size: 4rem;
   font-weight: 800;
   text-align: center;
@@ -855,7 +852,7 @@ input[type="file"] {
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   margin-top: 1.5rem;
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-sora), sans-serif;
   letter-spacing: 0.5px;
   position: relative;
   overflow: hidden;
@@ -969,7 +966,7 @@ input[type="file"] {
 }
 
 .stat-item .stat-value {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), sans-serif;
   font-size: 2.8rem;
   font-weight: 700;
   letter-spacing: -2px;
@@ -1083,7 +1080,7 @@ input[type="file"] {
 }
 
 .info-value {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
@@ -1095,7 +1092,7 @@ input[type="file"] {
 }
 
 .info-value.small {
-  font-family: 'Sora', sans-serif;
+  font-family: var(--font-sora), sans-serif;
   font-size: 1rem;
   letter-spacing: 0;
 }
@@ -1206,7 +1203,7 @@ input[type="file"] {
 }
 
 .term-rank {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace, monospace;
   font-weight: 700;
   color: #7c3aed;
   font-size: 1rem;
@@ -1222,7 +1219,7 @@ input[type="file"] {
 }
 
 .term-count {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace, monospace;
   color: rgba(255,255,255,0.5);
   font-size: 0.85rem;
   background: rgba(255, 255, 255, 0.05);
@@ -1263,7 +1260,7 @@ input[type="file"] {
 }
 
 .method-count {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace, monospace;
   background: linear-gradient(135deg, #7c3aed 0%, #ec4899 100%);
   color: white;
   padding: 0.25rem 0.7rem;
@@ -1303,7 +1300,7 @@ input[type="file"] {
 }
 
 .chat-count {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace, monospace;
   color: rgba(255,255,255,0.5);
   font-size: 0.85rem;
 }
@@ -1338,7 +1335,7 @@ input[type="file"] {
 }
 
 .device-count {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace, monospace;
   color: rgba(255,255,255,0.5);
   font-size: 0.85rem;
 }
@@ -1572,7 +1569,7 @@ input[type="file"] {
 }
 
 .slot-rank {
-  font-family: 'Sora', sans-serif;
+  font-family: var(--font-sora), sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   white-space: nowrap;
@@ -1742,7 +1739,7 @@ input[type="file"] {
 
 .slot-number {
   display: inline-block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), sans-serif;
   font-variant-numeric: tabular-nums;
   transition: all 0.1s ease;
 }
@@ -1826,7 +1823,7 @@ input[type="file"] {
   top: 0;
   z-index: 1000;
   background: rgba(3, 0, 20, 0.8);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   transition: all 0.3s ease;
 }
@@ -1846,7 +1843,7 @@ input[type="file"] {
 }
 
 .header-logo {
-  font-family: 'Sora', sans-serif;
+  font-family: var(--font-sora), sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: -1px;
@@ -1992,7 +1989,7 @@ input[type="file"] {
     width: 280px;
     height: 100vh;
     background: rgba(3, 0, 20, 0.98);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     padding: 5rem 2rem 2rem;
     transition: right 0.3s ease;
@@ -2087,7 +2084,7 @@ input[type="file"] {
 }
 
 .footer-title {
-  font-family: 'Sora', sans-serif;
+  font-family: var(--font-sora), sans-serif;
   font-size: 1.8rem;
   font-weight: 800;
   letter-spacing: -1px;
@@ -2294,7 +2291,6 @@ input[type="file"] {
     rgba(124, 58, 237, 0.03),
     transparent
   );
-  animation: faqGlow 15s linear infinite;
   pointer-events: none;
 }
 
@@ -3226,7 +3222,7 @@ input[type="file"] {
 /* Descriptive H1 subtitle + non-affiliation disclaimer */
 .logo-subtitle {
   display: block;
-  font-family: 'Sora', sans-serif;
+  font-family: var(--font-sora), sans-serif;
   font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: -0.3px;
@@ -3364,7 +3360,7 @@ input[type="file"] {
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 50px;
   color: rgba(255, 255, 255, 0.9);
-  font-family: 'Sora', sans-serif;
+  font-family: var(--font-sora), sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
@@ -3413,8 +3409,8 @@ input[type="file"] {
   margin: 0;
   padding: 6px;
   background: rgba(15, 10, 30, 0.98);
-  backdrop-filter: blur(20px) saturate(160%);
-  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  backdrop-filter: blur(10px) saturate(160%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 14px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
@@ -3526,5 +3522,17 @@ input[type="file"] {
   .trust-badge {
     font-size: 0.78rem;
     padding: 0.35rem 0.75rem;
+  }
+}
+
+/* Respect reduced-motion + cut continuous animation cost */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
   }
 }

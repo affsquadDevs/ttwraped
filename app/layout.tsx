@@ -2,7 +2,23 @@ import './globals.css'
 import type { Metadata, Viewport } from 'next'
 import { headers } from 'next/headers'
 import React from 'react'
+import { Sora, DM_Sans } from 'next/font/google'
 import { defaultLocale, isLocale } from '@/lib/i18n/config'
+
+// Self-hosted, preloaded fonts (replaces the render-blocking Google Fonts
+// @import). Inter was imported but never used — dropped.
+const sora = Sora({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-sora',
+  display: 'swap',
+})
+const dmSans = DM_Sans({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-dm-sans',
+  display: 'swap',
+})
 
 // Root layout: renders <html>/<body> and all site-wide <head> tags.
 // The locale is provided by middleware via the x-locale header; per-page
@@ -51,7 +67,7 @@ export default function RootLayout({
   const lang = isLocale(headerLocale) ? headerLocale : defaultLocale
 
   return (
-    <html lang={lang}>
+    <html lang={lang} className={`${sora.variable} ${dmSans.variable}`}>
       <head>
         {/* Google Consent Mode v2 — default everything to denied BEFORE any tag
             loads. GTM and the AdSense loader are injected only after consent. */}

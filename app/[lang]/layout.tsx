@@ -24,7 +24,7 @@ export default async function LangLayout({
   return (
     <>
       <ConsentManager locale={locale} dict={dict.consent} />
-      <Header locale={locale} dict={dict} />
+      <Header locale={locale} nav={dict.nav} />
       {children}
       <Footer locale={locale} dict={dict} />
     </>

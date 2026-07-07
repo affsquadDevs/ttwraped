@@ -7,7 +7,7 @@ import { localizedPath, stripLocalePrefix, type Locale } from '@/lib/i18n/config
 import type { Dictionary } from '@/lib/i18n/dictionaries/en'
 import LanguageSwitcher from './LanguageSwitcher'
 
-export default function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
+export default function Header({ locale, nav }: { locale: Locale; nav: Dictionary['nav'] }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
@@ -22,12 +22,12 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
   const closeMenu = () => setIsMenuOpen(false)
 
   const navLinks = [
-    { base: '/', href: localizedPath('/', locale), label: dict.nav.home },
-    { base: '/analyze-wrapped', href: `${localizedPath('/analyze-wrapped', locale)}#upload-section`, label: dict.nav.analyze },
-    { base: '/example-wrapped', href: localizedPath('/example-wrapped', locale), label: dict.nav.example },
-    { base: '/about', href: localizedPath('/about', locale), label: dict.nav.about },
-    { base: '/blog', href: localizedPath('/blog', locale), label: dict.nav.blog },
-    { base: '/contact', href: localizedPath('/contact', locale), label: dict.nav.contact },
+    { base: '/', href: localizedPath('/', locale), label: nav.home },
+    { base: '/analyze-wrapped', href: `${localizedPath('/analyze-wrapped', locale)}#upload-section`, label: nav.analyze },
+    { base: '/example-wrapped', href: localizedPath('/example-wrapped', locale), label: nav.example },
+    { base: '/about', href: localizedPath('/about', locale), label: nav.about },
+    { base: '/blog', href: localizedPath('/blog', locale), label: nav.blog },
+    { base: '/contact', href: localizedPath('/contact', locale), label: nav.contact },
   ]
 
   const isActive = (linkBase: string) => {

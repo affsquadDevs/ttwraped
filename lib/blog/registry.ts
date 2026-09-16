@@ -1,4 +1,5 @@
 import type { BlogPost } from './types'
+import { post as wrapped2026 } from './posts/tiktok-wrapped-2026'
 import { post as notWorkingFixes } from './posts/tiktok-data-export-not-working-fixes'
 import { post as platformCompare } from './posts/tiktok-vs-instagram-youtube-data-export'
 import { post as deleteData } from './posts/delete-tiktok-data-account'
@@ -15,6 +16,7 @@ import { post as howToDownload } from './posts/how-to-download-analyze-tiktok-da
 
 // Newest first (drives blog index ordering).
 export const posts: BlogPost[] = [
+  wrapped2026,
   notWorkingFixes,
   platformCompare,
   deleteData,
